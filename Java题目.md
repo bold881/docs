@@ -30,3 +30,23 @@
 * 子类的构造代码块，执行子类的构造函数，并初始化子类的普通成员变量
 ## 为什么类只能继承一个父类，接口却可以多继承
 * 接口中除了default方法外都是抽象方法，都需要在实现类中实现，所以可以避免冲突。多个类继承的话会存在方法冲突的情况。
+## 常见的异常类型
+* java.lang.NullPointerException 空指针异常
+* java.lang.ClassNotFoundException 指定的类不存在
+* java.lang.NumberFormatException 字符串转为数字异常
+* java.lang.IndexOutOfBoundsException 字符串数据下标越界异常
+* java.lang.IllegalArgumentException 方法的参数错误
+* java.lang.IllegalAccessException 没有访问权限
+* java.lang.ArithmeticException 数学运算异常
+* java.lang.ClassCastException 数据类型转换异常
+* java.lang.FileNotFoundException 文件未找到异常
+* java.lang.ArrayStoreException 数组存储异常
+* java.lang.NoSuchMethodException 方法不存在异常
+* java.lang.NoSuchFieldException 域不存在
+* java.lang.EOFException 文件已技术异常
+* java.lang.InstantiationException  实例化异常，通过newInstance创建实例，实例化失败，如果接口或抽象类
+* java.lang.InterruptedException 被中止异常 当某个线程处理等待、休眠或其他暂停状态，此时其他线程通过Thread.interrupt中止该线程时抛出
+* java.lang.CloneNotSupportedException 不支持克隆异常，没有实现Cloneable接口或者不支持克隆方法时调用clone()时抛出
+* java.lang.OutOfMemoryException 内存不足异常
+* java.lang.NoClassDefFoundException 未找到类定义错误，JVM实例化某个类，找不到定义时抛出
+* 
