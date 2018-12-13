@@ -49,4 +49,47 @@
 * java.lang.CloneNotSupportedException 不支持克隆异常，没有实现Cloneable接口或者不支持克隆方法时调用clone()时抛出
 * java.lang.OutOfMemoryException 内存不足异常
 * java.lang.NoClassDefFoundException 未找到类定义错误，JVM实例化某个类，找不到定义时抛出
-* 
+* java.lang.SecurityException 在java.lang包下定义了一个类，加载时抛出违背安全原则异常
+* java.lang.SQLException 数据库访问错误或其他错误
+* java.lang.IOException 当I/O操作失败或者被中止时抛出
+* java.lang.SocketException 创建和访问Socket通信出错时抛出
+## Java的八中数据基本类型
+* byte（字节型）
+* short(短整型)
+* int（整型）
+* long（长整型）
+* double（双精度浮点数）
+* float（单精度浮点数）
+* char（字符型）
+* boolean（布尔型）
+## equals和==的区别
+* 值类型（基本数据类型）用==判断相等性
+* == 判断引用所指的对象是否同一个
+* equals是Object的成员函数，用于判断对象的等价性
+## List和Set的区别
+* List是有序放入，可以放入重复元素
+* Set是无序放入，元素不可重复，重复会被覆盖（元素的hashcode决定，其实位置是固定的）
+* List插入或删除时效率低，Set插入和删除时效率高，List的此操作会影响其他元素的位置，Set的此操作不会
+* List支持for循环，可以用小标访问，可以用迭代访问元素，Set因为无序只能用迭代访问
+## List和Map的区别
+* List是对象集合，允许对象重复
+* Map是键值对集合，key不允许重复
+## ArrayList和LinkedList的区别
+* ArrayList基于动态数组实现，在内存中是连续存放的，查询效率高，插入和删除效率低。
+* LinkedList是基于链表的数据结构，add和remove效率比ArrayList高，适用于头尾和指定位置的插入操作
+## ArrayList和Vector的区别
+* ArrayList是非线程安全的，Vector是线程安全的
+* 都是存储在连续空间的，空间扩容（增加元素）方式不一样，ArrayList不能设置增长因子为原数组长度的1.5倍，Vector为原数组长度+增加的素组长度，若为0，则新的长度为原来的两倍。
+* 除去线程安全的因素，ArrayList的效率要高于Vector
+## HashMap和HashTable的区别
+* HashMap是非同步的，HashTable是同步的线程安全的
+* HashMap接口移除了HashTable中的contains方法，增加了containsKey和containsValue方法
+* HashMap的效率要高于HashTable
+* HashMap的迭代器是fail-fast，HashTable不是。HashMap可能会抛出java.util.ConcurrentModificationException,迭代器本身的remove不会抛出此异常
+* HashMap随着时间的推移不能保证元素的顺序不发生变化
+* HashMap的键值可以为null，Hashtable不行
+## 线程安全和同步
+* 线程安全是指同一代码段，在多个线程和单个线程执行的情况下结果一致，其他变量的值也和预期的一样
+* 线程同步是指同步多个线程的动作，确保在给定的时间点只有一个线程可以访问资源，使用称为监视器概念实现的。
+## TreeMap
+* TreeMap适用于按自然顺序或自定义顺序遍历键
