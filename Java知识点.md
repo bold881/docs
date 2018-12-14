@@ -54,14 +54,14 @@
 * java.lang.IOException 当I/O操作失败或者被中止时抛出
 * java.lang.SocketException 创建和访问Socket通信出错时抛出
 ## Java的八种数据基本类型
-* byte（字节型）
-* short(短整型)
-* int（整型）
-* long（长整型）
-* double（双精度浮点数）
-* float（单精度浮点数）
-* char（字符型）
-* boolean（布尔型）
+* byte（字节型，1字节）
+* short(短整型，2字节)
+* int（整型,4字节）
+* long（长整型，8字节）
+* double（双精度浮点数，8字节）
+* float（单精度浮点数，4字节）
+* char（字符型，2字节）
+* boolean（布尔型，1字节）
 ## equals和==的区别
 * 值类型（基本数据类型）用==判断相等性
 * == 判断引用所指的对象是否同一个
@@ -112,3 +112,9 @@
 * sleep()不会释放对象锁，如果有synchronized同步块，其他线程仍不能访问共享数据
 * yield()不会释放对象锁，使当前线程回到可执行状态，yield()只会使同优先级和高优先级的线程获得执行机会
 * join()把指定的线程加入到当前线程，可以把两个线程变为顺序执行，如线程b中调用a.join(),则b会在线程a执行完之后才会继续执行（jion可以传入等待时间）
+## String，StringBuffer，StringBuilder的区别
+* String 字符串常量
+* StringBuffer 字符串变量 线程安全
+* StringBuilder 字符串变量 非线程安全
+* 大部分情况下StringBuffer > String (除了String a = "abc" + "def" + "ghk")
+* 大部分情况下StrnigBuilder > StringBuffer
