@@ -22,5 +22,28 @@
       "https://raw.githubusercontent.com/bold881/docs/master/img/20181126082559.jpg"
     ],
     "decorateImg": "https://raw.githubusercontent.com/bold881/docs/master/img/art.png"
+  },
+  "hometextiles": {
+    "carousels": [
+      "https://raw.githubusercontent.com/bold881/docs/master/img/hometextiles/20181219140601.jpg",
+      "https://raw.githubusercontent.com/bold881/docs/master/img/hometextiles/20181219140602.jpg",
+      "https://raw.githubusercontent.com/bold881/docs/master/img/hometextiles/20181219140603.jpg",
+      "https://raw.githubusercontent.com/bold881/docs/master/img/hometextiles/20181219140604.jpg"
+    ],
+    "name": "家纺",
+    "headtextMain": "超时代，更出彩，百年品牌玩转时尚",
+    "headtextSub": "让家居个性张扬，不落俗套",
+    "items": [
+      "https://raw.githubusercontent.com/bold881/docs/master/img/hometextiles/20181219140601.jpg",
+      "https://raw.githubusercontent.com/bold881/docs/master/img/hometextiles/20181219140602.jpg",
+      "https://raw.githubusercontent.com/bold881/docs/master/img/hometextiles/20181219140603.jpg",
+      "https://raw.githubusercontent.com/bold881/docs/master/img/hometextiles/20181219140604.jpg",
+      "https://raw.githubusercontent.com/bold881/docs/master/img/hometextiles/20181219140605.jpg",
+      "https://raw.githubusercontent.com/bold881/docs/master/img/hometextiles/20181219140606.jpg",
+      "https://raw.githubusercontent.com/bold881/docs/master/img/hometextiles/20181219140607.jpg",
+      "https://raw.githubusercontent.com/bold881/docs/master/img/hometextiles/20181219140608.jpg",
+      "https://raw.githubusercontent.com/bold881/docs/master/img/hometextiles/20181219140609.jpg"
+    ],
+    "decorateImg": "https://raw.githubusercontent.com/bold881/docs/master/img/fashion.png"
   }
 }
