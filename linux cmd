@@ -1,3 +1,0 @@
-systemctl start nginx
-systemctl status nginx
-systemctl enable nginx (开机启动)
